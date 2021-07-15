@@ -1,0 +1,110 @@
+:root{
+    --col-base-blue:rgb(119, 220, 238);
+    --col-light-blue:rgb(177, 241, 252);
+    --col-dark-blue:rgb(34, 155, 177);
+    --col-base-red:rgb(238, 119, 119);
+    --col-light-red:rgb(252, 177, 177);
+    --col-dark-red:rgb(177, 34, 34);
+    --col-base-purple:rgb(218, 119, 238);
+    --col-light-purple:rgb(249, 177, 252);
+    --col-dark-purple:rgb(177, 34, 122);
+    --col-white:white;
+    --col-black:black;
+    --col-shadow:rgb(92, 102, 104);
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: auto;
+    margin-top:25vh;
+    background-color: var(--col-shadow);
+    width: 85vw;
+    min-height: 50vh;
+    border-radius: 15px;
+}
+
+.column{
+    width: 100%;
+    padding: 5%;
+}
+
+i{
+    font-size: 2rem;
+    opacity: 50%;
+}
+
+.section-title{
+    margin-top: 30px;
+    color: var(--col-white);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+.section-desc{
+    margin-top: 20px;
+    color: var(--col-white);
+    font-size: 1.1rem;
+}
+
+.learn-more{
+    margin-top: 40px;
+    width: 150px;
+    font-size:1.2rem;
+    padding:10px;
+    border-color: transparent;
+    border-radius: 50px;
+}
+
+.column:nth-child(1){
+    background-color: var(--col-base-red);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.column:nth-child(2){
+    background-color: var(--col-base-purple);
+}
+.column:nth-child(3){
+    background-color: var(--col-base-blue);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@media (max-width:700px){
+    .container{
+        flex-direction: column;
+        margin-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
+
+    .column{
+        padding: 15%;
+    }
+
+    .column:nth-child(1){
+        background-color: var(--col-base-red);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .column:nth-child(2){
+        background-color: var(--col-base-purple);
+    }
+    .column:nth-child(3){
+        background-color: var(--col-base-blue);
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 15px;
+    }
+}
