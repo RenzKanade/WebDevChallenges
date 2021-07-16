@@ -1,0 +1,174 @@
+*:root{
+    --col-red-dark:rgb(112, 0, 0);
+    --col-red-light:rgb(252, 130, 130);
+    --col-gray:rgb(182, 182, 182);
+    --col-black:black;
+    --col-lightwhite:rgb(241, 232, 232);
+}
+
+*{
+    font-family: 'Caveat', cursive;
+    margin:0;
+    padding:0;
+    color:var(--col-lightwhite);
+}
+
+body{
+    background-color: var(--col-black);
+    padding:10%;
+    text-align: center;
+}
+
+.catchphrase{
+    font-size: 3rem;
+}
+
+.sublines{
+    color:var(--col-gray);
+    font-size: 1.6rem;
+}
+
+.ratings{
+    margin-top:5vh;
+}
+
+.card-ratings{
+    background-color: var(--col-red-light);
+    margin-top: 5%;
+    padding: 3%;
+    border-radius: 15px;
+}
+
+i{
+    color:rgb(0, 89, 124);
+}
+
+.types{
+    color:var(--col-red-dark);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.section-2{
+    margin-top: 10vh;
+}
+
+.card-review{
+    text-align: left;
+    background-color: var(--col-red-dark);
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.profile{
+    display: flex;
+}
+
+.prof-img{
+    width: 100px;
+}
+
+.profimg{
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.prof-desc{
+    padding-left: 20px;
+    font-size: 1.6rem;
+}
+.prof-job{
+    color:var(--col-gray);
+    font-size: 1.2rem;
+}
+
+.review{
+    margin-top:2vh;
+}
+
+@media (min-width:700px){
+
+    body{
+        max-width: 80%;
+    }
+
+
+    .section-1{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .headline{
+        width: 50%;
+    }
+
+    .ratings{
+        width: 50%;
+        margin-top: 0px;
+    }
+
+    .card-ratings{
+        width: 100%;
+        font-size: 1rem;
+        flex-direction: column;
+    }
+
+    .card-ratings:nth-child(2){
+        margin-left: 5%;
+    }
+
+    .card-ratings:nth-child(3){
+        margin-left: 15%;
+    }
+
+    .types{
+        float: right;
+        font-size: 1rem;
+    }
+
+    .section-2{
+        flex-direction: column;
+    }
+
+    .card-review{
+        width: 20%;
+        padding:3%;
+    }
+
+    .card-review:nth-child(2){
+        position: absolute;
+        margin-top: -320px;
+        margin-left: 21vw;
+    }
+    .card-review:nth-child(3){
+        position: absolute;
+        margin-top: -300px;
+        margin-left: 47vw;
+    }
+
+}
+
+@media (min-width:900px){
+    .section-2{
+        flex-direction: column;
+    }
+
+    .card-review{
+        width: 300px;
+        padding:3%;
+    }
+
+    .card-review:nth-child(2){
+        position: absolute;
+        margin-top: -280px;
+        margin-left: 25vw;
+    }
+    .card-review:nth-child(3){
+        position: absolute;
+        margin-top: -250px;
+        margin-left: 51vw;
+    }
+}
