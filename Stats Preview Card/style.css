@@ -1,0 +1,124 @@
+*:root{
+    --col-blue-base:rgb(120, 143, 248);
+    --col-blue-light:rgb(142, 205, 247);
+    --col-blue-dark:rgb(0, 12, 179);
+    --col-white:white;
+    --col-accent:rgb(224, 177, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+    color: var(--col-white);
+}
+
+.accent{
+    color: var(--col-accent);
+}
+
+.card{
+    width: 90vw;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom:10vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--col-blue-dark);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.img-container{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.description{
+    padding: 10%;
+}
+
+.title{
+    padding: 20px;
+    font-size: 2.5rem;
+}
+
+.subtitle{
+    color: var(--col-blue-light);
+}
+
+.stat{
+    padding:2%;
+    margin-bottom:40px;
+}
+
+.number{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    margin-top:20px
+}
+
+.count{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: var(--col-blue-light);
+}
+
+@media (min-width:1000px){
+    .card{
+        flex-direction: row-reverse;
+        max-width: 60%;
+    }
+
+    .img-container{
+        width: 200%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .img{
+        height: 100%;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .description{
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    .title{
+        font-size: 1.8rem;
+    
+    }
+
+    .subtitle{
+        padding-left: 20px;
+    }
+
+    .stat-container{
+        display: inline-flex;
+        padding-top: 20px;
+        padding-left: 30px;
+        justify-content: space-around;
+    }
+
+    .number{
+        font-size: 1.3rem;
+    
+    }
+
+    .count{
+        font-size: 1.1rem;
+    
+    }
+}
