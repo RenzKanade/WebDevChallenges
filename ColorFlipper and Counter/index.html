@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Flipper and Counter</title>
+</head>
+<body>
+    <div class="container" id="color-flipper">
+        <p class="container-title">Current Background Color : <span id="col-name"> Red</span></p>
+        <button class="button-col" onclick="ChangeColor()">Change Color</button>
+    </div>
+    <div class="container" id="counter">
+        <p class="count-num" id="counter-display">0</p>
+        <div class="controls">
+            <button onclick="DecreaseCounter()" class="button-col">decrease</button>
+            <button onclick="ResetCounter()" class="button-col">reset</button>
+            <button onclick="IncreaseCounter()" class="button-col">increase</button>
+        </div>
+    </div>
+</body>
+</html>
