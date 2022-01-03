@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Js-->
+    <script src="https://kit.fontawesome.com/ec428974e0.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <!--Css-->
+    <link rel="stylesheet" href="./styles.css">
+    <!--Fonts-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700;800&family=The+Nautigal:wght@400;700&display=swap');
+    </style>
+    <!--Site Info-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Info</title>
+</head>
+<body onload="GenerateStaffOnLoad()">
+    <h1 class="not-displayed">Challenge Site</h1>
+    <section class="staffs">
+        <h2 class="section-title">Our Staff</h2>
+
+        <div class="container">
+            <div class="staff-img-container" id="staff-pic" ></div>
+            <div class="staff-info">
+                <h3 class="staff-name" id="staff-name">Name</h3>
+                <p class="staff-team" id="staff-team">Team</p>
+                <p class="staff-description" id="staff-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, expedita atque. Mollitia, tempore sequi tempora nisi facilis expedita voluptate earum.</p>
+            </div>
+            <div class="controls">
+                <i class="fas fa-chevron-left" id="prev-btn" onclick="PrevStaff()" ></i>
+                <i class="fas fa-chevron-right" id="next-btn" onclick="NextStaff()"></i>
+            </div>
+            <div class="btn-container">
+                <button class="generate-btn" onclick="GenerateStaff()">Generate More Staff</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
